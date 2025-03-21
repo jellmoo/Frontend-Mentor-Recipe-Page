@@ -1,0 +1,253 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.container p,
+.instructions ol li,
+.ingredients ul li {
+    max-width: 70ch;
+    line-height: 1.6;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+:root {
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #FFFFFF;
+}
+
+:root {
+    --heading-large: 40px;
+    --heading-medium: 28px;
+    --heading-small: 20px;
+    --body-text: 16px;
+    --small-text: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stone-100);
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 736px;
+    height: auto;
+    border-radius: 24px;
+    background: var(--white);
+    padding: 40px;
+    margin: 100px;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(95, 86, 77, 0.1);
+}
+
+img {
+    border-radius: 12px;
+    margin-bottom: 40px; 
+}
+
+h1 {
+    color: var(--stone-900);
+    margin-bottom: 24px;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: var(--heading-large);
+}
+
+.container p {
+    font-weight: 400;
+    color: var(--stone-600);
+    margin-bottom: 32px;
+}
+
+.prep-time {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--rose-50);
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.prep-time h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: var(--heading-small);
+    font-weight: 600;
+    color: var(--rose-800);
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+.ingredients ul {
+    margin-bottom: 32px;
+}
+
+.instructions {
+    margin-bottom: 32px;
+} 
+
+h2 {
+    font-size: var(--heading-medium);
+    color: var(--brown-800);
+    margin-bottom: 24px;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 32px;
+    border: 1px solid var(--stone-150);
+}
+
+span {
+    font-weight: bold;
+}
+
+ul, ol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    color: var(--stone-600);
+    gap: 5px;
+}
+
+ul li,
+ol li {
+    padding-left: 8px;
+}
+
+ul li::marker {
+    font-size: 0.8em;
+    color: var(--brown-800);
+    
+}
+
+ol li::marker {
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+.nutrition th {
+    text-align: left;
+    color: var(--stone-600);
+    font-weight: 400;
+    padding-left: 20px;
+  }
+  
+.nutrition td {
+    text-align: left;
+    color: var(--brown-800);
+    padding: 8px 0;
+    font-weight: bold;
+  }
+  
+.nutrition tr {
+    border-bottom: 1px solid var(--stone-150);
+    height: 45px;
+  }
+  
+.nutrition tr:last-child {
+    border-bottom: none;
+  }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  /* Mobile Devices (smaller than 600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+        min-height: auto;
+    }
+
+    .container p, ul, ol {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    img {
+        margin-bottom: 24px;
+    }
+  }
+
+  /* Tablets (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 30px;
+        margin: 50px;
+        min-height: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+  }
+
+@media (max-width: 900px) {
+    .container {
+        margin: 20px
+    }
+  }
