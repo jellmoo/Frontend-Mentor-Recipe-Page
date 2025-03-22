@@ -75,20 +75,20 @@ body {
     height: auto;
     border-radius: 24px;
     background: var(--white);
-    padding: 40px;
-    margin: 100px;
+    padding: 2.5rem;
+    margin: 6.25rem;
     position: relative;
     box-shadow: 10px 10px 15px rgba(95, 86, 77, 0.1);
 }
 
 img {
     border-radius: 12px;
-    margin-bottom: 40px; 
+    margin-bottom: 2.5rem; 
 }
 
 h1 {
     color: var(--stone-900);
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 h1, h2 {
@@ -100,16 +100,16 @@ h1, h2 {
 .container p {
     font-weight: 400;
     color: var(--stone-600);
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .prep-time {
     display: flex;
     flex-direction: column;
     background-color: var(--rose-50);
-    padding: 24px;
+    padding: 1.5rem;
     border-radius: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .prep-time h2 {
@@ -118,26 +118,26 @@ h1, h2 {
     font-weight: 600;
     color: var(--rose-800);
     line-height: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .ingredients ul {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .instructions {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 } 
 
 h2 {
     font-size: var(--heading-medium);
     color: var(--brown-800);
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 hr {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     border: 1px solid var(--stone-150);
 }
 
@@ -148,14 +148,14 @@ span {
 ul, ol {
     display: flex;
     flex-direction: column;
-    padding-left: 24px;
+    padding-left: 1.5rem;
     color: var(--stone-600);
     gap: 5px;
 }
 
 ul li,
 ol li {
-    padding-left: 8px;
+    padding-left: 0.5rem;
 }
 
 ul li::marker {
@@ -178,13 +178,13 @@ ol li::marker {
     text-align: left;
     color: var(--stone-600);
     font-weight: 400;
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
   
 .nutrition td {
     text-align: left;
     color: var(--brown-800);
-    padding: 8px 0;
+    padding: 0.5rem 0;
     font-weight: bold;
   }
   
@@ -211,43 +211,43 @@ ol li::marker {
   /* Mobile Devices (smaller than 600px) */
 @media (max-width: 600px) {
     .container {
-        padding: 20px;
-        margin: 20px;
+        padding: 1.25rem;
+        margin: 1.25rem;
         min-height: auto;
     }
 
     .container p, ul, ol {
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     img {
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
   }
 
   /* Tablets (600px - 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
     .container {
-        padding: 30px;
-        margin: 50px;
+        padding: 1.875rem;
+        margin: 3.125rem;
         min-height: auto;
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
   }
 
 @media (max-width: 900px) {
     .container {
-        margin: 20px
+        margin: 1.25rem;
     }
   }
